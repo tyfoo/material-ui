@@ -22,11 +22,13 @@ const InlineStyles = require('./components/pages/customization/inline-styles');
 const Components = require('./components/pages/components');
 const AppBar = require('./components/pages/components/app-bar');
 const Avatars = require('./components/pages/components/avatars');
+const Badge = require('./components/pages/components/badge');
 const Buttons = require('./components/pages/components/buttons');
 const Cards = require('./components/pages/components/cards');
 const DatePicker = require('./components/pages/components/date-picker');
 const Dialog = require('./components/pages/components/dialog');
 const DropDownMenu = require('./components/pages/components/drop-down-menu');
+const GridList = require('./components/pages/components/grid-list');
 const Icons = require('./components/pages/components/icons');
 const IconButtons = require('./components/pages/components/icon-buttons');
 const IconMenus = require('./components/pages/components/icon-menus');
@@ -34,6 +36,7 @@ const LeftNav = require('./components/pages/components/left-nav');
 const Lists = require('./components/pages/components/lists');
 const Menus = require('./components/pages/components/menus');
 const Paper = require('./components/pages/components/paper');
+const Popover = require('./components/pages/components/popover');
 const Progress = require('./components/pages/components/progress');
 const RefreshIndicator = require('./components/pages/components/refresh-indicator');
 const Sliders = require('./components/pages/components/sliders');
@@ -76,11 +79,13 @@ const AppRoutes = (
     <Route path="components" component={Components}>
       <Route path="appbar" component={AppBar} />
       <Route path="avatars" component={Avatars} />
+      <Route path="badge" component={Badge} />
       <Route path="buttons" component={Buttons} />
       <Route path="cards" component={Cards} />
       <Route path="date-picker" component={DatePicker} />
       <Route path="dialog" component={Dialog} />
       <Route path="dropdown-menu" component={DropDownMenu} />
+      <Route path="grid-list" component={GridList} />
       <Route path="icons" component={Icons} />
       <Route path="icon-buttons" component={IconButtons} />
       <Route path="icon-menus" component={IconMenus} />
@@ -88,6 +93,7 @@ const AppRoutes = (
       <Route path="lists" component={Lists} />
       <Route path="menus" component={Menus} />
       <Route path="paper" component={Paper} />
+      <Route path="popover" component={Popover} />
       <Route path="progress" component={Progress} />
       <Route path="refresh-indicator" component={RefreshIndicator} />
       <Route path="sliders" component={Sliders} />

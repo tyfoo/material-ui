@@ -51,6 +51,7 @@ const FloatingActionButton = React.createClass({
     onTouchEnd: React.PropTypes.func,
     onTouchStart: React.PropTypes.func,
     secondary: React.PropTypes.bool,
+    style: React.PropTypes.object,
   },
 
   getInitialState() {
@@ -207,7 +208,8 @@ const FloatingActionButton = React.createClass({
           disabled={disabled}
           style={this.mergeStyles(
             styles.container,
-            this.props.mini && styles.containerWhenMini
+            this.props.mini && styles.containerWhenMini,
+            iconStyle
           )}
           focusRippleColor={styles.icon.color}
           touchRippleColor={styles.icon.color}>
